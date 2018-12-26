@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 2.8.9)
+project(clib)
+add_subdirectory(String)
+include_directories(String)
+add_executable(test test.c)
+target_link_libraries(test /home/ryan/CLionProjects/Convenient-C-lib/cmake-build-debug/libmy_string.a)
